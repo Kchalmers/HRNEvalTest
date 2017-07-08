@@ -1,0 +1,42 @@
+@import "variablesMain";
+
+body {
+  margin: $body-margin;
+  padding: $body-padding;
+}
+ul {
+  list-style-type: none;
+}
+.navBar{
+  background-color: $navigation-background;
+  height: 75px;
+  width: 100vw;
+  ul {
+    color: $primary-color;
+    >li{
+      >ul {
+        display: none;
+      }
+    }
+  }
+  > * {
+    display: inline-block;
+  }
+}
+.menuItem {
+  display: inline-block;
+  margin: 0 $standard-margin;
+}
+#desktopMenu {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 80vw;
+  position: relative;
+  bottom: 1em;
+}
+header {
+  background: $header-background;
+  width: $header-width;
+  height: $header-height;
+}
