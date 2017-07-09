@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style-type: none; }
+
+.navBar {
+  background-color: black;
+  height: 75px;
+  width: 100vw; }
+  .navBar ul {
+    color: white; }
+    .navBar ul > li > ul {
+      display: none; }
+  .navBar > * {
+    display: inline-block; }
+
+.menuItem {
+  display: inline-block;
+  margin: 0 2em; }
+
+#desktopMenu {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 80vw;
+  position: relative;
+  bottom: 1em; }
+
+header {
+  background: url(../imgs/header-bg-desktop.jpg) center top no-repeat;
+  width: 100vw;
+  height: 100vh; }
+
+/*# sourceMappingURL=main.css.map */
