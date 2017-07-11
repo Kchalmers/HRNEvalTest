@@ -44,19 +44,21 @@
     <!--End Nav-->
     <!--Header-->
     <header class="header">
-        <div class="the">The</div>
-        <div class="greatest">Greatest</div>
-        <div class="HRShowsOnEarth">HR Shows on Earth</div>
+        <div id="headerMessage">
+            <div class="the">The</div>
+            <div class="greatest">Greatest</div>
+            <div class="HRShowsOnEarth">HR Shows on Earth</div>
+        </div>
         <div class="headerInfo">
-            <div class="headLine">Unleash Your People!</div>
+            <div class="headLine title">Unleash Your People!</div>
             <div class="headerButtons">
                 <button id="requestagenda">Request Agenda</button>
                 <button class="getTickets">Get Tickets</button>
             </div>
             <div id="KeynoteAndSponsors">
                 <div class="featuring">
-                    <div class="title">Featuring Keynote</div>
-                    <div id="firstKeynote">Baroness Karen Brady</div>
+                    <div>Featuring Keynote</div>
+                    <div id="firstKeynote"  class="title">Baroness Karen Brady</div>
                 </div>
                 <span class="sponsors">
                     <a href="" target="_blank" title="Avature"><img src="imgs/sponsors/avature.svg" alt="Avature"></a>
@@ -66,8 +68,8 @@
                     <a href="" target="_blank" title="Workday"><img src="imgs/sponsors/workday.svg" alt="Workday"></a>
                 </span>
                 <div class="featuring">
-                    <div class="title">Featuring Keynote</div>
-                    <div id="secondKeynote">Sir Ken Robinson</div>
+                    <div>Featuring Keynote</div>
+                    <div id="secondKeynote" class="title">Sir Ken Robinson</div>
                 </div>
             </div>
         </div>
@@ -75,12 +77,47 @@
     <!--End Header-->
     <!--Topics-->
     <section class="topics">
+        <div id="topicNav">
 
+        </div>
+        <div id="topicInfo">
+            <div id="topicTitle"></div>
+            <div class="topicMessage"></div>
+            <div class="topicButton">
+                <button>Join Our Community</button>
+                <button>Watch Trailer</button>
+            </div>
+        </div>
     </section>
     <!--End Topics-->
     <!--App-->
-    <section class="app">
-
+    <section id="app">
+        <div class="leftCol col-5">
+            <div id="phones">
+                <img src="imgs/app/phones.png" alt="phones">
+            </div>
+            <div id="predictiveHire">
+                <img src="imgs/app/predictive-hire.svg" alt="Predictive Hire">
+            </div>
+            <div class="appHeader title">Download The Application</div>
+            <div class="appMessage">Download the HR Tech World Mobile App and instantly connect with thousands of attendees right on your fingertips. The app is your online diary that allows you to access the conference agenda, interactive floorplans, schedule meetings with buyer prospects, industry peers and so much more...</div>
+            <div class="appButton">
+                <div class="googleImgContainer">
+                    <img src="imgs/app/googleplay.svg" alt="google">
+                </div>
+                <div class="appleImgContainer">
+                    <img src="imgs/app/applestore.svg" alt="apple">
+                </div>
+            </div>
+        </div>
+        <div class="rightCol col-5">
+            <div class="creatureImg">
+                <img src="imgs/app/app-logo.svg" alt="creature">
+            </div>
+            <div class="rightButton">
+                <button>View Tutorials</button>
+            </div>
+        </div>
     </section>
     <!--End App-->
 </body>

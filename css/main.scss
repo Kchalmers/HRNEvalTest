@@ -1,16 +1,32 @@
 @import "variablesMain";
 
+@for $i from 1 through 10 {
+  .col-#{$i} {
+    width: $i * 7em;
+    display: inline-block;
+  }
+}
+img {
+  height: 100%;
+  width: 100%;
+}
 body {
   margin: $body-margin;
   padding: $body-padding;
+  color: $primary-color;
+  text-align: center;
+  font-family: $font-primary;
 }
 ul {
   list-style-type: none;
 }
 .navBar{
   background-color: $navigation-background;
+  position: fixed;
+  z-index: 1;
   height: 75px;
   width: 100vw;
+  font-size: 14px;
   ul {
     color: $primary-color;
     >li{
@@ -23,6 +39,9 @@ ul {
     display: inline-block;
   }
 }
+#logo {
+  margin-top: 1em;
+}
 .menuItem {
   display: inline-block;
   margin: 0 $standard-margin;
@@ -31,7 +50,7 @@ ul {
   margin: 0;
   padding: 0;
   text-align: center;
-  width: 80vw;
+  width: 85vw;
   position: relative;
   bottom: 1em;
 }
@@ -39,4 +58,48 @@ header {
   background: $header-background;
   width: $header-width;
   height: $header-height;
+}
+#headerMessage {
+  position: relative;
+  top: 50%;
+  font-family: $font-secondary;
+}
+#app {
+  color: $secondary-color;
+  background: url(../imgs/desktop-bg.jpg) center top no-repeat;
+}
+.headerInfo{
+  position: relative;
+  top: 75%;
+}
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+#KeynoteAndSponsors{
+  > div {
+    display: inline-block;
+  }
+}
+#phones {
+  width: 40%;
+  height: 10%;
+}
+#predictiveHire {
+  width: 20%;
+}
+.appButton {
+  width: 50%;
+  > div {
+    display: inline-block;
+    width: 48%;
+  }
+}
+.sponsors {
+  a {
+    img {
+      width: 5vw;
+      height: 2vw;
+    }
+  }
 }
