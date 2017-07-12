@@ -1,0 +1,131 @@
+@import "variablesMain";
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1) {
+  .menuItem {
+    margin: 0 1em;
+  }
+  .leftKey {
+    margin-right: 2em;
+  }
+  #SuccessFactors {
+    width: 12vw;
+  }
+  #Cornerstone {
+    width: 8vw;
+  }
+  #Avature, #Workday {
+    width: 4vw;
+  }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) {
+  .menuItem {
+    margin: 0 1em;
+  }
+  .leftKey {
+    margin-right: 2em;
+  }
+  #SuccessFactors {
+    width: 12vw;
+  }
+  #Cornerstone {
+    width: 8vw;
+  }
+  #Avature, #Workday {
+    width: 4vw;
+  }
+}
+/* ----------- iPad 3 and 4 ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  #desktopMenu {
+    display: none;
+  }
+  #app {
+    display: block;
+  }
+  .leftCol {
+    display: block;
+    width: 100%;
+  }
+  .rightCol {
+    display: block;
+    width: 100%;
+  }
+  #predictiveHire {
+    margin: -1em 0em 0em 28em;
+  }
+}
+/* ----------- iPhone 6 ----------- */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  header {
+    background: url(../imgs/header-bg-mobile.jpg) no-repeat;
+    background-size: cover;
+  }
+  #topics {
+    width: 100%;
+  }
+  #desktopMenu {
+    display: none;
+  }
+  #app {
+    display: block;
+  }
+  .leftCol {
+    display: block;
+    width: 100%;
+  }
+  .rightCol {
+    display: block;
+    width: 100%;
+  }
+  #predictiveHire {
+    margin: -1em 0em 0em 15em;
+  }
+}
+
+
+/* ----------- iPhone 6+ ----------- */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3) {
+  header {
+    background: url(../imgs/header-bg-mobile.jpg) no-repeat;
+    background-size: cover;
+  }
+  #topics {
+    width: 100%;
+  }
+  #desktopMenu {
+    display: none;
+  }
+  #app {
+    display: block;
+  }
+  .leftCol {
+    display: block;
+    width: 100%;
+  }
+  .rightCol {
+    display: block;
+    width: 100%;
+  }
+  #predictiveHire {
+    margin: -1em 0em 0em 15em;
+  }
+}
