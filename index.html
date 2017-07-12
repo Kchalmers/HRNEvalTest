@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HRN Eval Test</title>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair%20Display:300,400,500,700">
 </head>
 <!-- Style CSS -->
 <link rel="stylesheet" href="css/main.css" />
@@ -37,7 +39,7 @@
                 </ul>
             </li>
             <li class="menuItem tickets">
-                <button class="getTickets">Get Tickets</button>
+                <button class="btn getTickets">Get Tickets</button>
             </li>
         </ul>
     </nav>
@@ -52,70 +54,78 @@
         <div class="headerInfo">
             <div class="headLine title">Unleash Your People!</div>
             <div class="headerButtons">
-                <button id="requestagenda">Request Agenda</button>
-                <button class="getTickets">Get Tickets</button>
+                <button id="requestagenda" class="btn inverted margin-1">Request Agenda</button>
+                <button class="btn getTickets margin-1">Get Tickets</button>
             </div>
             <div id="KeynoteAndSponsors">
-                <div class="featuring">
+                <div class="featuring leftKey">
                     <div>Featuring Keynote</div>
-                    <div id="firstKeynote"  class="title">Baroness Karen Brady</div>
+                    <div id="firstKeynote">Baroness Karen Brady</div>
                 </div>
                 <span class="sponsors">
-                    <a href="" target="_blank" title="Avature"><img src="imgs/sponsors/avature.svg" alt="Avature"></a>
-                    <a href="" target="_blank" title="Benify"><img src="imgs/sponsors/benify.svg" alt="Benify"></a>
-                    <a href="" target="_blank" title="Cornerstone"><img src="imgs/sponsors/cornerstone.svg" alt="Cornerstone"></a>
-                    <a href="" target="_blank" title="Successfactors"><img src="imgs/sponsors/successfactors.svg" alt="Successfactors"></a>
-                    <a href="" target="_blank" title="Workday"><img src="imgs/sponsors/workday.svg" alt="Workday"></a>
+                    <a href="" target="_blank" title="Avature"><img id="Avature" src="imgs/sponsors/avature.svg" alt="Avature"></a>
+                    <a href="" target="_blank" title="Benify"><img id="Benify" src="imgs/sponsors/benify.svg" alt="Benify"></a>
+                    <a href="" target="_blank" title="Cornerstone"><img id="Cornerstone" src="imgs/sponsors/cornerstone.svg" alt="Cornerstone"></a>
+                    <a href="" target="_blank" title="Successfactors"><img id="SuccessFactors" src="imgs/sponsors/successfactors.svg" alt="Successfactors"></a>
+                    <a href="" target="_blank" title="Workday"><img id="Workday" src="imgs/sponsors/workday.svg" alt="Workday"></a>
                 </span>
-                <div class="featuring">
+                <div class="featuring rightKey">
                     <div>Featuring Keynote</div>
-                    <div id="secondKeynote" class="title">Sir Ken Robinson</div>
+                    <div id="secondKeynote">Sir Ken Robinson</div>
                 </div>
             </div>
         </div>
     </header>
     <!--End Header-->
     <!--Topics-->
-    <section class="topics">
+    <section id="topics" class="col-8 padding-tb-5">
         <div id="topicNav">
 
         </div>
         <div id="topicInfo">
-            <div id="topicTitle"></div>
-            <div class="topicMessage"></div>
+            <div id="topicTitle" class="title">THE FUTURE OF WORK</div>
+            <div class="topicMessage">
+                <p>
+                    Technology continues to change our understanding of the world around us and in ways we had never imagined. Within 10 years, over half of the office occupations in the world will be displaced by technology. How do we manage this?
+                    How do we capitalize on this? And where is tech leading the Future of Work?
+                </p>
+                <p>
+                    With Brexit, Cognitive HR, a possible global leadership crisis, and disruptions occurring in unpredictable ways, we’ll be in London to help you navigate the changes and the possibilities interwoven with HR and tech.
+                </p>
+            </div>
             <div class="topicButton">
-                <button>Join Our Community</button>
-                <button>Watch Trailer</button>
+                <button class="btn btnTopic">Join Our Community</button>
+                <button class="btn btnTopic">Watch Trailer</button>
             </div>
         </div>
     </section>
     <!--End Topics-->
     <!--App-->
-    <section id="app">
-        <div class="leftCol col-5">
+    <section id="app" class="padding-tb-2">
+        <div class="leftCol col-6">
             <div id="phones">
                 <img src="imgs/app/phones.png" alt="phones">
             </div>
             <div id="predictiveHire">
                 <img src="imgs/app/predictive-hire.svg" alt="Predictive Hire">
             </div>
-            <div class="appHeader title">Download The Application</div>
+            <div class="appHeader title padding-1">Download The Application</div>
             <div class="appMessage">Download the HR Tech World Mobile App and instantly connect with thousands of attendees right on your fingertips. The app is your online diary that allows you to access the conference agenda, interactive floorplans, schedule meetings with buyer prospects, industry peers and so much more...</div>
             <div class="appButton">
-                <div class="googleImgContainer">
+                <div class="googleImgContainer ">
                     <img src="imgs/app/googleplay.svg" alt="google">
                 </div>
-                <div class="appleImgContainer">
+                <div class="appleImgContainer padding-2">
                     <img src="imgs/app/applestore.svg" alt="apple">
                 </div>
             </div>
         </div>
-        <div class="rightCol col-5">
+        <div class="rightCol col-6">
             <div class="creatureImg">
                 <img src="imgs/app/app-logo.svg" alt="creature">
             </div>
             <div class="rightButton">
-                <button>View Tutorials</button>
+                <button class="btn inverted btnApp">View Tutorials</button>
             </div>
         </div>
     </section>

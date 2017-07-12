@@ -6,6 +6,8 @@ $navigation-background: black;
 // === FONTS ===
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: "Playfair Display",serif;
+$paragraph-font: 14px;
+$title-font: 2.5em;
 
 // === PADDING AND MARGINS ===
 $standard-padding: 1.1em;
@@ -15,5 +17,5 @@ $body-padding: 0;
 
 // === HEADER ===
 $header-background: url(../imgs/header-bg-desktop.jpg) center top no-repeat;
-$header-width: 100vw;
+$header-width: 100%;
 $header-height: 100vh;
