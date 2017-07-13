@@ -1,27 +1,103 @@
 @import "variablesMain";
 
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: $i * 7em;
+    display: inline-block;
+  }
+  .margin-#{$i} {
+    margin: $i + em;
+  }
+  .padding-#{$i} {
+    padding: $i + em;
+  }
+  .padding-sides-#{$i} {
+    padding: 0 $i + em;
+  }
+  .padding-tb-#{$i} {
+    padding: $i + em 0;
+  }
+}
+
+@mixin paragraphs {
+  line-height: 192%;
+  font-weight: 300;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+button:hover {
+  cursor: pointer;
+}
+.btn {
+  background-color: #99cc00;
+  color: #fff;
+  border: none;
+  width: 15em;
+  height: 3em;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #fff;
+    color: #99cc00;
+  }
+}
+.inverted {
+  background-color: #fff;
+  color: #99cc00;
+  &:hover {
+    background-color: #99cc00;
+    color: #fff;
+  }
+}
+.btnTopic:hover {
+  border: 1px solid #99cc00;
+}
+.btnApp{
+  color: $secondary-color;
+  &:hover {
+    color: $primary-color;
+    background-color: transparent;
+    border: 1px solid white;
+  }
+}
 body {
   margin: $body-margin;
   padding: $body-padding;
+  color: $primary-color;
+  text-align: center;
+  font-family: $font-primary;
+  font-size: $paragraph-font;
 }
 ul {
   list-style-type: none;
 }
 .navBar{
   background-color: $navigation-background;
+  position: fixed;
+  z-index: 1;
   height: 75px;
   width: 100vw;
   ul {
     color: $primary-color;
     >li{
+      text-transform: uppercase;
+      &:hover{
+        cursor: pointer;
+        color: #99cc00;
+      }
       >ul {
         display: none;
       }
     }
   }
-  > * {
-    display: inline-block;
-  }
+
+}
+#logo {
+  margin-top: 1em;
+  position: absolute;
+  left: 1em;
 }
 .menuItem {
   display: inline-block;
@@ -31,12 +107,113 @@ ul {
   margin: 0;
   padding: 0;
   text-align: center;
-  width: 80vw;
   position: relative;
-  bottom: 1em;
+  left: 5em;
+  top: 1em;
 }
 header {
   background: $header-background;
+  background-size: cover;
   width: $header-width;
   height: $header-height;
+}
+#headerMessage {
+  top: 30%;
+  left: 38%;
+  height: 50%;
+  width: 50%;
+  text-align: left;
+  position: absolute;
+  font-family: $font-secondary;
+}
+.the{
+  position: absolute;
+  font-size: 2.5em;
+}
+.greatest{
+  position: absolute;
+  font-size: 8em;
+}
+.HRShowsOnEarth{
+  position: absolute;
+  margin-left: 2.5em;
+  font-size: 2.8em;
+  top: 14vh;
+}
+#topics{
+  color: $secondary-color;
+}
+#app {
+  color: $secondary-color;
+  background: url(../imgs/desktop-bg.jpg) center top no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerInfo{
+  position: relative;
+  top: 75%;
+}
+.title {
+  font-size: $title-font;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.featuring{
+  font-size: 2em;
+}
+.tab {
+  margin-left: 2em;
+}
+#firstKeynote, #secondKeynote {
+  font-size: 1.2em;;
+  font-weight: 900;
+}
+.leftKey {
+  margin-right: 3em;
+}
+#KeynoteAndSponsors{
+  > div {
+    display: inline-block;
+  }
+}
+#phones {
+  width: 40%;
+  height: 10%;
+  display: inline-block;
+}
+#predictiveHire {
+  width: 20%;
+  margin: -2em 0em 0em 23em;
+}
+.appButton {
+  margin: auto;
+  > div {
+    display: inline-block;
+    width: 23%;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.sponsors {
+  a {
+    img {
+      width: 7vw;
+      margin: 3em 4em 0 0;
+    }
+  }
+}
+.appMessage, .topicMessage {
+  @include paragraphs;
+}
+#SuccessFactors {
+  width: 13vw;
+}
+#Cornerstone {
+  width: 9vw;
+}
+#Avature, #Workday {
+  width: 5vw;
 }
